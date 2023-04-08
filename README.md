@@ -1,2 +1,0 @@
-# JFSJD
-GIT HUB Practice
