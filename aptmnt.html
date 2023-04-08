@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Appointment </title>
+	<style type="text/css">
+    *{
+ margin: 0;
+ padding: 0;
+ font-family: 'Cinzel', serif;
+}
+
+.bgimg{
+ width: 100%;
+ height: 110vh;
+ background-image: linear-gradient(27deg,  green 50%, yellow 50%);
+}
+
+.centerdiv{
+ width: 350px;
+ height: 550px;
+ position: absolute;
+ top: 55%;
+ left: 50%;
+ background-color: red;
+ transform: translate(-50%, -50%);
+ background-image: linear-gradient(27deg, #013A6B 50%, #004E95 50%);
+ box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+
+
+h2{
+ text-align: center;
+ color: white;
+ text-transform: uppercase;
+ font-size: 2em;
+ word-spacing: 10px;
+ margin-bottom: 50px;
+ text-shadow: -2px 2px 1px #0A84C6;
+}
+
+.inputbox{
+ width: calc(100% - 40px);
+ height: 30px;
+ display: block;
+ margin: auto;
+ padding: 0 10px;
+ box-sizing: border-box;
+}
+
+::placeholder{
+ letter-spacing: 2px;
+ color: black;
+}
+
+button{
+ width: calc(100% - 40px);
+ height: 30px;
+ display: block;
+ margin: auto;
+ color: white;
+ background-color: #0A84C6;
+ border: none;
+}
+th{
+	color: white;
+	font-size: 15px;
+}
+</style>
+</head>
+<body>
+	<div class="bgimg">
+   <div class="centerdiv">
+    <h2>APPOINTMENT FORM</h2>
+    <form>
+    	<table>
+				<tr>
+					<th>First Name</th>
+					<td><input type="text" name="name" placeholder="Enter First name" class="inputbox"></td>
+				</tr>
+				<tr>
+					<th>Last Name</th>
+					<td><input type="text" name="name" placeholder="Enter Last Name" class="inputbox"></td>
+				</tr>
+				<tr>
+					<th>Gender</th>
+					<td>
+						<input type="radio" name="Gender" value="Male">Male
+					
+					
+						<input type="radio" name="Gender" value="Female">Female
+					</td>
+				</tr>
+				<tr>
+					<th>Age</th>
+					<td>
+						<input type="number" name="age" placeholder="Enter your age" class="inputbox">
+					</td>
+				</tr>
+				<tr>
+					<th>Date of Appointment</th>
+					<td>
+						<input type="date" name="dob" class="inputbox">
+					</td>
+				</tr>
+				<tr>
+					<th>Email Address</th>
+					<td>
+						<input type="email" name="Email_ID" placeholder="Enter Email" class="inputbox">
+					</td>
+				</tr>
+				
+				<tr>
+					<th>Contact No</th>
+					<td>
+						<input type="number" name="contact" maxlength="10" placeholder="Enter Contact No" class="inputbox">
+					</td>
+				</tr>
+				<tr>
+					<th>Address</th>
+					<td>
+						<textarea rows="3" cols="21" class="inputbox"> Enter your Address</textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>Pincode</th>
+					<td>
+						<input type="text" name="pincode" placeholder="Enter Pincode" class="inputbox">
+					</td>
+				</tr>
+				<tr>
+					<th>Department Name</th>
+					<td> 
+						<select name="Doctors" class="inputbox">
+							<option>--Select your Department--</option>
+							<option>Dental Dept.</option>
+							<option>Neuro Dept.</option>
+							<option>Ortho Dept.</option>
+							<option>Cardio Dept.</option>
+							<option>Patheology Dept.</option>
+							<option>X-Ray/MRI/ECG Dept.</option>
+
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>Doctor's Name</th>
+					<td> 
+						<select name="Doctors" class="inputbox">
+							<option>--Select your Doctors--</option>
+							<option>Dr. Ragini(Dental)</option>
+							<option>Dr. Sushmita(Neuro)</option>
+							<option>Dr. Akash(Ortho)</option>
+							<option>Dr. Preethi(Cardio)</option>
+							<option>Dr. Shevanta Kalashetty(Patheology)</option>
+							<option>Dr. Alok(X-Ray/MRI/ECG)</option>
+
+						</select>
+					</td>
+				</tr>
+				
+				
+				
+			</table>
+			<br><br>
+			<div>
+      			<button type="submit" class="inputbox"> BOOK </button>
+     		</div>
+    </form>
+
+</body>
+</html>
